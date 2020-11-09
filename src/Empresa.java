@@ -11,6 +11,22 @@ public class Empresa {
    private String cidade;
    private int cep;
    private String pais;
+
+    public long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
+    }
    private int telefone;
 
    public Usuario getUsuario() {

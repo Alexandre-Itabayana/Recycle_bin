@@ -1,12 +1,12 @@
-/* Essa claase faz login com usuário e chama método coleta*/ 
+/* Essa claase faz login com usuï¿½rio e chama mï¿½todo coleta*/ 
 
 public class Morador {
 	private long cpf;
 	private float usuariosenha; 
 
 	public Morador (long num, float user) {
-	cpf = num;
-	usuariosenha = user;
+	this.cpf = num;
+	this.usuariosenha = user;
 	}
 	
 	public void solicitaColeta (long num){

@@ -2,29 +2,47 @@
  *  e gerar usuario para entrada no sistema*/
 
 public class Cadastro {
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public long getCpf() {
+        return cpf;
+    }
+
 	private String nome;
 	private String endereco;
 	private String telefone;
 	private long cpf;
 	private float usuariosenha;
+        
 	
 	public Cadastro (String n, String end, String tel, long num) {
-		nome = n;
-		endereco = end;
-		telefone = tel;
-		cpf = num;
+		this.nome = n;
+		this.endereco = end;
+		this.telefone = tel;
+		this.cpf = num;
 	}
 	public 	void validarCadastro (long num){
-		if (cpf < 0) //verificar banco de dados se existe*/
-		System.out.println("Já existe esse cadastro"); 
+		if (this.cpf < 0) //verificar banco de dados se existe*/
+		System.out.println("Jï¿½ existe esse cadastro"); 
 
 	}
 	
 	public 	void incluir (String n, String end, String tel, long num){
-		nome = n;
-		endereco = end;
-		telefone = tel;
-		cpf = num;
+		this.nome = n;
+		this.endereco = end;
+		this.telefone = tel;
+		this.cpf = num;
 	}
 	
 	public	void excluir (long num){
